@@ -1,0 +1,69 @@
+Luiz Gabriel Zanotelli Rolim N USP 9005908
+Weslley Gomes Eleutério N USP 11372761
+
+
+Dificuldades apresentadas ao longo do trabalho.
+
+Bem, a nossa primeira dificuldade foi com o uso de structs
+não estavamos familirizados com esse tipo de dado, também 
+no momento de chamar uma struct para uma função não sabiamos
+que o ponteiro era necessario, prefirimos usar o comando typedef
+no inicio da nossa struct para que a notação dela ao longo do código
+fosse menos carregada.
+A segunda dificuldade foi gerar um menu "infinito" que saisse quando 
+se apertava zero, mas logo foi superada com a adesão do laço while.
+Um dificuldade marcante também foi na hora de comparar o titulo do livro
+com o titulo do acervo, não nos lembravamos do comando strcmp que compara
+duas strings para ver se são iguais ( da biblioteca string.h) então deu uma pe
+quena dor de cabeça, na hora de chamar um dado tipo char* em uma função também, não 
+sabiamos como alocar isso no código.
+feito isso o nosso unico problema foi em manejar algumas funções, prefirimos colocar praticamente
+todas as funções como voids por que são funções mais fáceis de se mecher já que não precisavamos nos
+preocupar com o comando return dentro dela.Deixamos apenas a função 
+procuralivroemprestimo como um inteiro para que tivessemos menos dificuldade na hora do empréstimo de um
+livro ou devolução desse mesmo.
+Bem, apesar de não termos conseguido implementar tudo que desejavamos para criar um programa com algumas funções
+além daquelas pedidas pelo trabalho, acreditamos que o trabalho atende todos os requisitos minimos necessários
+ para rodar em diversos sistemas e também as funções básicas pedidas para o grupo.Abaixo listamos algumas dificul
+dades que não conseguimos superar, ou ideias das quais pensamos em implementar no código mas no final não tentamos. 
+
+
+dificuldades ainda não superadas e possiveis implementações do código
+Ao longo do código quis implementar a função system("clear") para que a tela fosse 
+limpa a cada interação, porém alguns dados importantes estavam sendo omitidos e acabava
+em que muitas partes do menu a tela praticamente ficava em branco.
+outra coisa que gostariamos de ter feito ao longo desse trabalho era conseguir criar um 
+comando condicional que retornasse uma mensagem caso um livro não constasse no acervo, ou se 
+o nome e o ISBN já estivesse presente em outro livro. Porém ao longo do programa sempre que eu 
+digitiva um nome que não existia o programa dava falha na segmentação de memória e era abordado no 
+mesmo momento.
+A nossa ideia era fazer return -1 na função procuratitulo e retorna ela quando ela fosse chamada dentro 
+da função registro, 
+Também gostariamos de fazer um return -1 para a função procuratitulo dentro da função empresta livr
+
+e também da função livroemprestado, para caso um livro não existisse no acervo ele me retornar isso
+porém ela estava entrando em conflito e também estava dando falha de segmentação na memória
+alocamos um "vetor de struct" de ordem 100, porém pensamos em alocar dinamicamente uma struct com a função malloc
+e a cada vez que o malloc atingisse o seu limite com o looping while dobrariamos o tamanho dele com a função realloc
+porém abandonamos a ideia devido ao usao excessivo de ponteiros ao longo do trabalho e também a problemas relativos a 
+possíveis vazamentos de memória.
+A ideia seria algo mais ou menos do tipo declarar o malloc como:
+no incio da struct também colocariamos um ponteiro para referenciar a locação dinamica
+ficaria algo como:
+typedef struct{
+informação das variaveis*
+}Livro
+Livro *livro \\ para referenciar um vetor de struct na locação dinamica
+livro = malloc(n*sizeof(Livro)); \\ no inicio do código da função main
+        while ( valor != 0)
+		( ESTRUTURA DO MENU COM O COMANDO SWITCH CASE)
+		contador++;	
+          if ( contador == n ){
+		y= 2*n;
+ 		realloc(livro,y*sizeof(Livro)); \\ exemplo de como realocaria a memória a cada interação do código onde a locação fosse totalmente preenchida;
+
+
+
+
+
+

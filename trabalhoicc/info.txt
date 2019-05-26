@@ -1,0 +1,18 @@
+Luiz Gabriel Zanotelli Rolim Nusp 9005908
+Weslley Gomes Eleotério      Nusp 11372761
+
+
+
+
+
+O trabalho em si foi bem elaborado, nossa maior dificuldade foi na confeccção
+do laço duplo de for, onde de inicio eu não sabiamos se deveriamos deixar
+k como uma simples variavel em função de i, ou se deveriamos fazer um loop
+apenas para k, depois de algumas tentativas encontramos o loop de for duplo e 
+conseguimos fazer o programa.
+Considerações
+nosso programa ficou com um código bem enxugado, se formos desconsiderar os
+comentários que foram um pouco excessivos, mas fora isso tentamos fazer um
+código bem enxuto e simples.
+Achamos bem legal também o conceito da transformada, dando uma pesquisa rápida
+vimos que ela é bastante empregada em alguns algoritmos de compressão, como JPEG
